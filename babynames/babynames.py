@@ -43,9 +43,6 @@ def extract_year(contents):
   num_list = re.findall(r'\w+\s\w+\s(\d+)</h3>', contents)
   return num_list
 
-# extract_year('baby1992.html')
-
-
 def extract_names(filename):
   """
   Given a file name for baby.html, returns a list starting with the year string
@@ -77,7 +74,6 @@ def extract_names(filename):
 
   return result
 
-# extract_names('baby1992.html')
 def main():
   # This command-line parsing code is provided.
   # Make a list of command line arguments, omitting the [0] element
